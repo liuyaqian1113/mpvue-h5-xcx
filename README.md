@@ -1,6 +1,6 @@
 # mpvue-h5
 
-> A Mpvue project
+> 使用mpvue做了简单的demo，可以让它运行在小程序端和web端
 
 ## Build Setup
 
