@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/main",
+    "pages/counter/main",
+    "pages/todoList/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}
