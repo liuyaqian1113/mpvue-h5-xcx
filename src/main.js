@@ -31,8 +31,6 @@ Vue.mixin({
       }
   },
   created() {
-      // console.log(wx)
-      // this.service = wxService
   }
 })
 

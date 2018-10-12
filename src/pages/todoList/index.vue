@@ -24,7 +24,6 @@ export default {
 
   methods: {
     gotoGame (path) {
-      console.log(path)
       this.reLaunchPageTo(this.router + path)
     }
   }

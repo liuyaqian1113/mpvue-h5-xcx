@@ -1,7 +1,12 @@
 <template>
   <div id="app">
 
-    <p :class="{'done': item.done}" v-for="(item, index) in todos" :key="index" @click="deleteDone(index)">{{index+1}}: {{item.name}}</p>
+    <p :class="{'done': item.done}"
+      v-for="(item, index) in todos"
+      :key="index"
+      @click="deleteDone(index)">
+      {{index+1}}: {{item.name}}
+    </p>
     <input v-model='inputValue' @keyup.enter="changeTitle" class="inputValue"/>
     <button @click="changeTitle">修改</button>
     <button @click="clean">清空</button>
@@ -41,7 +46,6 @@ export default {
 
   methods: {
     changeTitle () {
-      console.log(this.inputValue)
       this.todos.push({
         name: this.inputValue,
         done: false

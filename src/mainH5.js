@@ -2,7 +2,6 @@ import Vue from 'vue'
 import App from './AppH5'
 import router from './router'
 import 'lib-flexible/flexible'
-console.log(router)
 
 // 去掉生产环境的提示
 Vue.config.productionTip = false

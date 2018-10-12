@@ -32,35 +32,8 @@ export default {
 
   methods: {
     gotoGame (path) {
-      console.log(path)
       this.reLaunchPageTo(this.router + path)
     }
-    // bindViewTap () {
-    //   const url = '../logs/main'
-    //   wx.navigateTo({ url })
-    // },
-    // getUserInfo () {
-    //   // 调用登录接口
-    //   wx.login({
-    //     success: () => {
-    //       wx.getUserInfo({
-    //         success: (res) => {
-    //           console.log(res)
-    //           this.userInfo = res.userInfo
-    //         }
-    //       })
-    //     }
-    //   })
-    // },
-    // clickHandle (msg, ev) {
-    //   console.log('clickHandle:', msg, ev)
-    // }
-  },
-
-  created () {
-    console.log(this.router)
-    // 调用应用实例的方法获取全局数据
-    // this.getUserInfo()
   }
 }
 </script>
