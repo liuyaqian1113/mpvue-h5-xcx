@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="todoList">
 
     <p :class="{'done': item.done}"
       v-for="(item, index) in todos"
@@ -8,9 +8,9 @@
       {{index+1}}: {{item.name}}
     </p>
     <input v-model='inputValue' @keyup.enter="changeTitle" class="inputValue"/>
-    <button @click="changeTitle">修改</button>
-    <button @click="clean">清空</button>
-    <p>{{remain}}/{{todos.length}}</p>
+    <button class="button" @click="changeTitle">修改</button>
+    <button class="button" @click="clean">清空</button>
+    <p class="num">{{remain}}/{{todos.length}}</p>
 
   </div>
 </template>
@@ -62,14 +62,32 @@ export default {
 </script>
 
 <style>
-
+.todoList {
+  padding: 20px;
+}
 .done {
   text-decoration: line-through;
   color: red;
 }
 
 .inputValue {
+  width: 80%;
+  height: 30px;
   border: 1px solid #ccc;
-  margin: 10px;
+  margin: 10px auto;
+  display: block;
+}
+.num {
+  text-align: center;
+}
+.button {
+  font-size: 18px;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  background: #f5f5f5;
 }
 </style>

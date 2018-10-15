@@ -50,16 +50,17 @@ export default {
   color: #aaa;
 }
 
-.usermotto {
+/*.usermotto {
   margin-top: 150px;
   height: 50px;
-}
+}*/
 
 .form-control {
   display: block;
   padding: 0 12px;
   margin-bottom: 5px;
   border: 1px solid #ccc;
+  height: 30px;
 }
 .form-control {
   font-size: 18px;

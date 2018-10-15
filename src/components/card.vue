@@ -14,6 +14,7 @@ export default {
 
 <style>
 .card {
+  height: 40px;
   font-size: 20px;
   text-align: center;
 }
